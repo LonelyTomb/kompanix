@@ -12,4 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/impact/animate.scss', 'public/css')
+   .sass('resources/sass/impact/pe-icons.scss', 'public/css')
+   .sass('resources/sass/impact/style.scss', 'public/css')
    .sass('resources/sass/app.scss', 'public/css');
