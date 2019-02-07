@@ -28,7 +28,7 @@ class AdminResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/kpanel';
+    protected $redirectTo = '/kpanel/login';
 
     /**
      * Create a new controller instance.
