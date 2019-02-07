@@ -12,7 +12,7 @@
 
 <!-- Scripts -->
     {{--<script src="/js/manifest.js"></script>--}}
-    <script src="{{ asset('js/jquery.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ mix('js/app.js') }}" defer></script>
     <!-- Fonts -->
 
@@ -28,7 +28,7 @@
 <div id="app">
     <div id="preloader"></div>
     @include('layouts.header')
-    <main>
+    <main id="content-wrapper">
         @yield('content')
     </main>
     @include('layouts.footer')
@@ -38,5 +38,15 @@
 <script src="{{ asset('js/jquery.isotope.min.js') }}" defer></script>
 <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
 <script src="{{ asset('js/init.js') }}" defer></script>
+<script>
+    $(document).ready(function () {
+        'use strict';
+        $('body').backstretch([
+            "https://placehold.it/800x600",
+            "https://placehold.it/800x600",
+            "https://placehold.it/800x600"
+        ], {duration: 5000, fade: 500});
+    });
+</script>
 </body>
 </html>
