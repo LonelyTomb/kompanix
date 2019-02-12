@@ -25,14 +25,14 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
 </head>
 <body>
-<div id="app">
-    <div id="preloader"></div>
+
+    <div id="preloader"> </div>
     @include('layouts.header')
     <main id="content-wrapper">
         @yield('content')
     </main>
     @include('layouts.footer')
-</div>
+
 <script src="{{ asset('js/plugins.js') }}" defer></script>
 <script src="{{ asset('js/jquery.prettyPhoto.js') }}" defer></script>
 <script src="{{ asset('js/jquery.isotope.min.js') }}" defer></script>

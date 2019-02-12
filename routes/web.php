@@ -59,3 +59,11 @@ Route::prefix('kpanel')->group(
         );
     }
 );
+
+
+// Route::get('/services', [
+
+//     'uses' => 'ServicessController@index',
+
+//     'as' => 'services'
+// ]);
